@@ -15,154 +15,57 @@
           type:"Flex",
             altText: "flex Message from Share Target picker",
             Contents:  {
-      "body": {
-        "type": "box",
-        "position": "relative",
-        "layout": "vertical",
-        "contents": [
-          {
-            "weight": "bold",
-            "text": "BETKUBMVP",
-            "type": "text",
-            "size": "xl"
-          },
-          {
-            "layout": "baseline",
-            "type": "box",
-            "contents": [
-              {
-                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                "size": "sm",
-                "type": "icon"
-              },
-              {
-                "type": "icon",
-                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                "size": "sm"
-              },
-              {
-                "type": "icon",
-                "size": "sm",
-                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-              },
-              {
-                "type": "icon",
-                "size": "sm",
-                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-              },
-              {
-                "type": "icon",
-                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png",
-                "size": "sm"
-              },
-              {
-                "size": "sm",
-                "color": "#999999",
-                "margin": "md",
-                "text": "4.0",
-                "type": "text"
-              }
-            ],
-            "margin": "md"
-          },
-          {
-            "spacing": "sm",
-            "type": "box",
-            "contents": [
-              {
-                "spacing": "sm",
-                "contents": [
-                  {
-                    "flex": 1,
-                    "text": "Place",
-                    "type": "text",
-                    "color": "#aaaaaa",
-                    "size": "sm"
-                  },
-                  {
-                    "wrap": true,
-                    "size": "sm",
-                    "color": "#666666",
-                    "text": "Miraina Tower, 4-1-6 Shinjuku, Tokyo",
-                    "type": "text"
-                  }
-                ],
-                "type": "box",
-                "layout": "baseline"
-              },
-              {
-                "spacing": "sm",
-                "type": "box",
-                "contents": [
-                  {
-                    "text": "Time",
-                    "size": "sm",
-                    "type": "text",
-                    "color": "#aaaaaa",
-                    "flex": 1
-                  },
-                  {
-                    "wrap": true,
-                    "color": "#666666",
-                    "type": "text",
-                    "flex": 5,
-                    "size": "sm",
-                    "text": "10:00 - 23:00"
-                  }
-                ],
-                "layout": "baseline"
-              }
-            ],
-            "layout": "vertical",
-            "margin": "lg"
-          }
-        ]
+      "type": "bubble",
+      "hero": {
+        "aspectMode": "cover",
+        "type": "image",
+        "aspectRatio": "1:1",
+        "size": "full",
+        "url": "https://scontent.fbkk22-2.fna.fbcdn.net/v/t1.6435-9/187159057_110896421200424_1829753817442043035_n.jpg?_nc_cat=106&ccb=1-4&_nc_sid=730e14&_nc_ohc=iNzK8v6VPsoAX_bYnhF&_nc_ht=scontent.fbkk22-2.fna&oh=bdf1d1e78cf1af4c81f450843a3f97f3&oe=61343643",
+        "action": {
+          "label": "Line",
+          "type": "uri",
+          "uri": "https://linecorp.com/"
+        },
+        "backgroundColor": "#000000FF"
       },
       "footer": {
-        "layout": "horizontal",
         "spacing": "sm",
+        "type": "box",
         "contents": [
           {
-            "style": "link",
-            "type": "button",
-            "height": "sm",
             "position": "relative",
+            "margin": "xl",
+            "color": "#000000FF",
             "action": {
-              "uri": "https://liff.line.me/1656295360-weeWOM5g",
-              "label": "สมัครสมาชิก",
-              "type": "uri"
-            }
-          },
-          {
-            "type": "button",
-            "action": {
-              "label": "แนะนำเพื่อน",
+              "uri": "https://member.betkubmvp.com/register",
               "type": "uri",
-              "uri": "https://linecorp.com"
+              "label": "ทดลองเล่น"
             },
             "height": "sm",
-            "style": "link"
+            "type": "button",
+            "style": "primary",
+            "gravity": "center"
           },
           {
-            "type": "spacer",
-            "size": "sm"
+            "height": "sm",
+            "style": "primary",
+            "type": "button",
+            "margin": "xxl",
+            "action": {
+              "type": "uri",
+              "label": "แชร์ให้เพื่อน",
+              "uri": "https://liff.line.me/1656295360-weeWOM5g"
+            },
+            "color": "#000000FF"
+          },
+          {
+            "size": "sm",
+            "type": "spacer"
           }
         ],
-        "type": "box"
-      },
-      "hero": {
-        "url": "https://image-storage-betkub.s3.ap-southeast-1.amazonaws.com/images/ffeuZ2TFVCcdP123zqF7aufImZoUhmGZaVu5zcMx.png",
-        "type": "image",
-        "aspectMode": "fit",
-        "size": "full",
-        "position": "relative",
-        "action": {
-          "type": "uri",
-          "uri": "http://linecorp.com/"
-        },
-        "aspectRatio": "20:13"
-      },
-      "type": "bubble"
+        "layout": "horizontal"
+      }
     }
          }
          ])
