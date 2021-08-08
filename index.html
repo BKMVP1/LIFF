@@ -6,171 +6,71 @@
   <title>LIFF - LINE Front-end Framework</title>
   </head>
   <body>
-    <script src ="https://static.line-scdn.net/liff/edge/version/2.5.0/sdk.js"></script>
+    <script src ="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
     <script>
        async function main() {
          await liff.init({ liffId: "1656295360-weeWOM5g" })
-         await liff.sharetargetPicker([
+         await liff.shareTargetPicker([
            {
           type:"Flex",
             altText: "flex Message from Share Target picker",
             Contents: {
-  "type": "bubble",
-  "hero": {
-    "type": "image",
-    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
-    "size": "full",
-    "aspectRatio": "20:13",
-    "aspectMode": "cover",
-    "action": {
-      "type": "uri",
-      "label": "Line",
-      "uri": "https://linecorp.com/"
-    }
-  },
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "text",
-        "text": "Brown Cafe",
-        "weight": "bold",
-        "size": "xl",
-        "contents": []
-      },
-      {
-        "type": "box",
-        "layout": "baseline",
-        "margin": "md",
+    "type": "flex",
+    "contents": {
+      "footer": {
         "contents": [
           {
-            "type": "icon",
-            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-            "size": "sm"
+            "gravity": "center",
+            "style": "primary",
+            "position": "relative",
+            "color": "#000000FF",
+            "height": "sm",
+            "action": {
+              "uri": "https://member.betkubmvp.com/register",
+              "type": "uri",
+              "label": "ทดลองเล่น"
+            },
+            "margin": "xl",
+            "type": "button"
           },
           {
-            "type": "icon",
-            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-            "size": "sm"
+            "style": "primary",
+            "action": {
+              "uri": "https://liff.line.me/1656295360-weeWOM5g",
+              "type": "uri",
+              "label": "แชร์ให้เพื่อน"
+            },
+            "color": "#000000FF",
+            "type": "button",
+            "margin": "xxl",
+            "height": "sm"
           },
           {
-            "type": "icon",
-            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-            "size": "sm"
-          },
-          {
-            "type": "icon",
-            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-            "size": "sm"
-          },
-          {
-            "type": "icon",
-            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png",
-            "size": "sm"
-          },
-          {
-            "type": "text",
-            "text": "4.0",
             "size": "sm",
-            "color": "#999999",
-         
-            "margin": "md",
-            "contents": []
+            "type": "spacer"
           }
-        ]
-      },
-      {
+        ],
         "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
-        "margin": "lg",
-        "contents": [
-          {
-            "type": "box",
-            "layout": "baseline",
-            "spacing": "sm",
-            "contents": [
-              {
-                "type": "text",
-                "text": "Place",
-                "size": "sm",
-                "color": "#AAAAAA",
-               
-                "contents": []
-              },
-              {
-                "type": "text",
-                "text": "Miraina Tower, 4-1-6 Shinjuku, Tokyo",
-                "size": "sm",
-                "color": "#666666",
-               
-                "wrap": true,
-                "contents": []
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "layout": "baseline",
-            "spacing": "sm",
-            "contents": [
-              {
-                "type": "text",
-                "text": "Time",
-                "size": "sm",
-                "color": "#AAAAAA",
-               
-                "contents": []
-              },
-              {
-                "type": "text",
-                "text": "10:00 - 23:00",
-                "size": "sm",
-                "color": "#666666",
-               
-                "wrap": true,
-                "contents": []
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  "footer": {
-    "type": "box",
-    "layout": "vertical",
- 
-    "spacing": "sm",
-    "contents": [
-      {
-        "type": "button",
-        "action": {
-          "type": "uri",
-          "label": "CALL",
-          "uri": "https://linecorp.com"
-        },
-        "height": "sm",
-        "style": "link"
+        "layout": "horizontal",
+        "spacing": "sm"
       },
-      {
-        "type": "button",
+      "hero": {
+        "aspectRatio": "1:1",
         "action": {
-          "type": "uri",
-          "label": "WEBSITE",
-          "uri": "https://linecorp.com"
+          "uri": "https://linecorp.com/",
+          "label": "Line",
+          "type": "uri"
         },
-        "height": "sm",
-        "style": "link"
+        "size": "full",
+        "type": "image",
+        "aspectMode": "cover",
+        "url": "https://scontent.fbkk22-2.fna.fbcdn.net/v/t1.6435-9/187159057_110896421200424_1829753817442043035_n.jpg?_nc_cat=106&ccb=1-4&_nc_sid=730e14&_nc_ohc=iNzK8v6VPsoAX_bYnhF&_nc_ht=scontent.fbkk22-2.fna&oh=bdf1d1e78cf1af4c81f450843a3f97f3&oe=61343643",
+        "backgroundColor": "#000000FF"
       },
-      {
-        "type": "spacer",
-        "size": "sm"
-      }
-    ]
+      "type": "bubble"
+    },
+    "altText": "this is a flex message"
   }
-}
          }
          ])
          liff.closeWindow()
