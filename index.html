@@ -12,144 +12,64 @@
          await liff.init({ liffId: "1656295360-weeWOM5g" })
          await liff.shareTargetPicker([
            {
-          type:"Flex",
-            altText: "flex Message from Share Target picker",
-            Contents: 
-            
-            
-            
-{
-      "type": "bubble",
+             type:"flex",
+             altText: "flex Message from Share Target picker",
+             Contents: 
+             
+              {
       "hero": {
+        "url": "https://scontent.fbkk22-2.fna.fbcdn.net/v/t1.6435-9/196249274_104660081842203_2075926568849451837_n.jpg?_nc_cat=105&ccb=1-4&_nc_sid=730e14&_nc_ohc=TkIJYzds8BQAX_ENXY5&_nc_ht=scontent.fbkk22-2.fna&oh=03f7b24b18f514daebc4197bd1143f3e&oe=6134B1C5",
         "size": "full",
-        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
-        "type": "image",
+        "aspectRatio": "1:1",
         "action": {
+          "type": "uri",
           "uri": "https://linecorp.com/",
-          "label": "Line",
-          "type": "uri"
+          "label": "Line"
         },
-        "aspectMode": "cover",
-        "aspectRatio": "20:13"
+        "type": "image",
+        "aspectMode": "fit"
       },
-      "body": {
-        "contents": [
-          {
-            "size": "xxl",
-            "weight": "bold",
-            "align": "center",
-            "text": "BETKUBMVP",
-            "gravity": "center",
-            "color": "#000000FF",
-            "type": "text",
-            "contents": []
-          },
-          {
-            "type": "box",
-            "layout": "baseline",
-            "margin": "md",
-            "contents": [
-              {
-                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                "size": "sm",
-                "type": "icon"
-              },
-              {
-                "type": "icon",
-                "size": "sm",
-                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-              },
-              {
-                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                "type": "icon",
-                "size": "sm"
-              },
-              {
-                "type": "icon",
-                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                "size": "sm"
-              },
-              {
-                "type": "icon",
-                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png",
-                "size": "sm"
-              },
-              {
-                "contents": [],
-                "size": "sm",
-                "text": "5.0",
-                "type": "text",
-                "color": "#999999",
-                "margin": "md"
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "spacing": "sm",
-            "margin": "lg",
-            "layout": "vertical",
-            "contents": [
-              {
-                "contents": [
-                  {
-                    "color": "#666666",
-                    "size": "md",
-                    "contents": [],
-                    "type": "text",
-                    "wrap": true,
-                    "text": "เครดิตฟรี 50"
-                  }
-                ],
-                "type": "box",
-                "layout": "baseline",
-                "spacing": "sm"
-              }
-            ]
-          }
-        ],
-        "layout": "vertical",
-        "type": "box"
-      },
-      "size": "mega",
       "footer": {
         "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
         "contents": [
           {
-            "height": "sm",
-            "type": "button",
+            "style": "link",
             "action": {
               "label": "สมัครสมาชิก",
               "type": "uri",
-              "uri": "https://linecorp.com"
+              "uri": "https://liff.line.me/1656295360-weeWOM5g"
             },
-            "style": "primary"
-          },
-          {
-            "style": "primary",
             "type": "button",
-            "height": "sm",
-            "action": {
-              "type": "uri",
-              "uri": "https://liff.line.me/1656295360-weeWOM5g",
-              "label": "แชร์เลย"
-            }
+            "height": "sm"
           },
           {
-            "type": "spacer"
+            "type": "button",
+            "action": {
+              "label": "แชร์ให้เพื่อน",
+              "type": "uri",
+              "uri": "https://liff.line.me/1656295360-weeWOM5g"
+            },
+            "style": "link",
+            "height": "sm"
+          },
+          {
+            "type": "spacer",
+            "size": "sm"
           }
-        ]
+        ],
+        "layout": "horizontal",
+      
+        "spacing": "sm"
       },
-      "direction": "ltr"
-}
-            
-         }
+      "type": "bubble"
+    }
+           
+
+             }
          ])
          liff.closeWindow()
        }
       main()
     </script>
-  </body>
+    </body>
 </html>
